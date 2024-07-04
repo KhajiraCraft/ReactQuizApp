@@ -16,3 +16,12 @@ const reducer = (state, action) => {
         return {...state, currentQuestionIndex};
     }
 };
+
+export const QuizContext = createContext();
+
+export const QuizProvider = () => {
+    const value = useReducer(reducer, initialState);
+    console.log("state",value);
+    return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>
+
+};
