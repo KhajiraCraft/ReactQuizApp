@@ -1,8 +1,10 @@
 import {useReducer} from 'react';
 import { createContext } from 'react';
+import questions from '../data'
 
 const initialState = {
-    currentQuestionIndex: 0
+    currentQuestionIndex: 0,
+    questions
 };
 
 

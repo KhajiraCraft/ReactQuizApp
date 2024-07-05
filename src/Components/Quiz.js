@@ -6,7 +6,15 @@ const Quiz =() => {
     console.log("quizState",quizState)
 
     return (
-        <div>Hello World</div>
+        // <div>Hello World</div>
+        <div className="quiz">
+
+
+            <div>
+                <div className="score">Question {quizState.currentQuestionIndex +1}/{quizState.questions.length}</div>
+            </div>
+
+        </div>
     );
 
 
