@@ -14,6 +14,8 @@ const Quiz =() => {
             <div>
                 <div className="score">Question {quizState.currentQuestionIndex +1}/{quizState.questions.length}</div>
             <Question />
+
+            
             </div>
 
         </div>
